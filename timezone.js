@@ -48,7 +48,7 @@ function displayInfo(event) {
 
           <p class="time" >${torontoTime}</p>
         </div>
-       <a href ="#">All cities</a> `;
+        `;
   } else if (value === "Asia/Dubai") {
     city.innerHTML = `<div class="city-flex">
           <div class="city">
