@@ -74,3 +74,14 @@ footer {
   width: 100%;
   text-align: center;
 }
+a {
+  color: #8571e8;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #a1d9ec;
+  transition: all 200ms ease-in-out;
+}
