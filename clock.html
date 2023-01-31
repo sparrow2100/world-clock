@@ -11,6 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -33,7 +43,7 @@
             <p class="date">Mon Jan 30th, 2023</p>
           </div>
 
-          <p class="time">3:35 PM</p>
+          <p class="time" id="vancouver-time">3:35 PM</p>
         </div>
 
         <div class="city-flex">
@@ -42,7 +52,7 @@
             <p class="date">Mon Jan 30th, 2023</p>
           </div>
 
-          <p class="time">4:30 AM</p>
+          <p class="time" id="tokyo-time">4:30 AM</p>
         </div>
       </div>
     </div>
@@ -60,5 +70,6 @@
         >
       </p>
     </footer>
+    <script src="./timezone.js"></script>
   </body>
 </html>

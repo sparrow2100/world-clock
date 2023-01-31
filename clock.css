@@ -34,6 +34,10 @@ select {
   color: #8571e8;
 }
 
+select:hover {
+  cursor: pointer;
+}
+
 .heading {
   padding-top: 30px;
 }
@@ -42,6 +46,7 @@ h2 {
   font-size: 30px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  text-align: left;
 }
 
 h1 {
