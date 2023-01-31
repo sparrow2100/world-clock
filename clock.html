@@ -28,19 +28,19 @@
       <div class="heading">
         <h1>World Clock</h1>
         <form>
-          <select>
+          <select id="cities">
             <option>Select a city</option>
-            <option>Seattle</option>
-            <option>Toronto</option>
-            <option>Cardiff</option>
+            <option value="America/Toronto">Toronto</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Europe/Dublin">Dublin</option>
           </select>
         </form>
       </div>
-      <div class="default-cities">
+      <div class="default-cities" id="default-cities">
         <div class="city-flex">
           <div class="city">
             <h2>Vancouver</h2>
-            <p class="date">Mon Jan 30th, 2023</p>
+            <p class="date" id="vancouver-date">Mon Jan 30th, 2023</p>
           </div>
 
           <p class="time" id="vancouver-time">3:35 PM</p>
@@ -49,13 +49,15 @@
         <div class="city-flex">
           <div class="city">
             <h2>Tokyo</h2>
-            <p class="date">Mon Jan 30th, 2023</p>
+            <p class="date" id="tokyo-date">Mon Jan 30th, 2023</p>
           </div>
 
           <p class="time" id="tokyo-time">4:30 AM</p>
         </div>
       </div>
     </div>
+    <button class="homepage invisible" id="homepage">All cities</button>
+
     <footer>
       <p>
         Coded by
