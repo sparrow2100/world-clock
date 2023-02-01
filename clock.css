@@ -109,3 +109,11 @@ a:hover {
   opacity: 0.9;
   transition: all 200ms ease-in-out;
 }
+
+.third-city {
+  width: 550px;
+}
+
+.invisible {
+  display: none;
+}

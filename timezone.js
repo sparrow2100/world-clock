@@ -36,8 +36,10 @@ let dubaiDate = moment().tz("Asia/Dubai").format("dddd MMMM Do, YYYY");
 let dublinDate = moment().tz("Europe/Dublin").format("dddd MMMM Do, YYYY");
 
 let select = document.querySelector("#cities");
+let button = document.querySelector("#homepage");
 
 function displayInfo(event) {
+  button.classList.remove("invisible");
   let value = select.options[select.selectedIndex].value;
   if (value === "America/Toronto") {
     city.innerHTML = `<div class="city-flex">
@@ -72,3 +74,9 @@ function displayInfo(event) {
 
 let city = document.querySelector("#default-cities");
 select.addEventListener("change", displayInfo);
+
+function reloadPage(event) {
+  location.reload();
+}
+
+button.addEventListener("click", reloadPage);
